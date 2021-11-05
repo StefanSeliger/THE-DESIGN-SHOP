@@ -1,0 +1,184 @@
+/* ===== General Styles ===== */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Font Families & Colors
+font-family: 'Karla', sans-serif;
+Farbe: #323A45 / #848484 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    color: #323A45; 
+    font-size: 1rem;
+}
+
+html {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header nav h1:hover, a:hover {
+    opacity: 0.5;
+}
+
+.fontColorGrey {
+    color: #848484; 
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.product, .price, h2 {
+    font-size: 1.1rem; 
+}
+
+header, main {
+    margin: 5vh 6vw;
+}
+/* ===== Header Styles ===== */
+header nav {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+}
+
+header nav ul {
+    display: flex; 
+}
+
+header nav ul li {
+    margin-left: 30px; 
+}
+
+/* ===== Main Styles ===== */
+
+/* = General Main Styles = */
+main section div {
+    margin: 15px 0; 
+}
+
+main section div img {
+    width: 100%; 
+    margin-bottom: 15px; 
+}
+
+main section div div {
+    display: grid; 
+    grid-template-columns: 2.5fr 1fr;
+    gap: 8px; 
+}
+
+.product {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.price {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: right;
+}
+
+.company {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+/* Sections */
+main section {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; 
+}
+
+.heroImage {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+/* ===== Footer Styles ===== */
+footer {
+    margin: 5vh 6vw 2vh 6vw;
+}
+
+footer section {
+    display: grid; 
+    grid-template-columns: 2.5fr 1fr 2fr 2fr;
+    /* gap: 50px;  */
+    grid-column: center;
+}
+
+footer section article h2 {
+    margin-bottom: 3vh; 
+}
+
+.fontStyleBold {
+    font-weight: bold;
+}
+
+.fontItalic {
+    font-style: italic;
+}
+
+footer section article p, ul li {
+    line-height: 30px; 
+}
+
+footer > p {
+    margin-top: 10vh; 
+}
+
+footer > p span {
+    margin: 0 1vw; 
+}
+
+/* ===== Media Queries for 600px ===== */
+@media screen and (max-width: 600px) {
+    hmtl {
+        font-size: 80%;
+    }
+
+    /* Mobile Header Styles */
+    header, main {
+        margin: 5vh 3vw;
+    }
+    
+    header nav {
+        display: block; 
+        text-align: center;
+    }
+    
+    header nav ul {
+        display: none; 
+    }
+
+    header nav ul li {
+        margin-left: 0; 
+    }
+
+    /* Mobile Main Styles */
+    main section div div {
+        display: grid; 
+        grid-template-columns: 1fr 0.5fr;
+        gap: 8px; 
+    }
+    
+}
+
+
+
+
+
+
