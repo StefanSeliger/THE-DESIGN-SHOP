@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE DESING SHOP_CONTACT & Newsletter</title>
+    <link rel="stylesheet" href="../css/contact_newsletterStyle.css">
+</head>
+<body>
+    <main>
+        <!-- Logo -->
+        <h1><a href="../../index.html">THE DESIGN SHOP</a></h1>
+        <p class="fontSizeSmall fontStyleItalic">back to..</p>
+        <section>
+            <!-- Contact us -->
+            <article>
+                <h2>You want to talk to us?</h2>
+                <p>Please feel free to contact us for feedback, questions or anything else.</p>
+                <form action="" onclick="return false">
+                    <input type="text" name="name" id="contactName" placeholder="Name & Surname">
+                    <input type="email" name="mail" id="contactMail" placeholder="Email">
+                    <input type="tel" name="phone" id="contactPhone" placeholder="Phone Number">
+                    <input class="inputMessageHeight" type="text" name="message" id="contactMessage" placeholder="Enter your message here">
+                    <input class="submitButtonContact" onclick="contactForm()" type="submit" value="Submit">
+                </form>
+                <p class="fontSizeSmall">With sending us a message you agree to be contacted by our Team.</p>
+            </article>
+            <!-- Newsletter subscription -->
+            <article>
+                <h2>Don't forget to sign up for our Newsletter!</h2>
+                <p>Never miss our weekly reccommedations and sign up for our Newsletter. Don't worry we won't send spam!</p>
+                <form action="" onclick="return false">
+                    <input type="text" name="name" id="newsletterName" placeholder="Name">
+                    <input type="text" name="name" id="newsletterSurname" placeholder="Surname">
+                    <input type="email" name="mail" id="newsletterMail" placeholder="Email">
+                    <input class="submitButtonNewsletter" onclick="newsletterForm()" type="submit" value="Submit">
+                </form>
+                <p class="fontSizeSmall">With signing up for our Newsletter you automatically agree to our T&A.</p>
+            </article>
+        </section>
+    </main>
+    <!-- JS -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

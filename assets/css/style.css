@@ -16,33 +16,27 @@ Farbe: #323A45 / #848484 */
     font-size: 1rem;
 }
 
-html {
-    font-size: 100%;
-}
-
-a {
-    text-decoration: none;
+h1 {
+    font-size: 1.5rem;
 }
 
 ul {
     list-style: none;
 }
 
-header nav h1:hover, a:hover {
+a {
+    text-decoration: none;
+}
+
+h1:hover, a:hover {
     opacity: 0.5;
 }
 
-.fontColorGrey {
-    color: #848484; 
-}
 
-h1 {
-    font-size: 1.5rem;
-}
 
-.product, .price, h2 {
-    font-size: 1.1rem; 
-}
+
+
+
 
 header, main {
     margin: 5vh 6vw;
@@ -74,8 +68,12 @@ header nav > ul li {
 /* ===== Main Shop Area ===== */
 
 /* = General Main Shop Area = */
-main section div {
-    margin: 15px 0; 
+.product, .price, h2 {
+    font-size: 1.1rem; 
+}
+
+.fontColorGrey {
+    color: #848484; 
 }
 
 /* Sections */
@@ -83,6 +81,10 @@ main section {
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
     gap: 25px; 
+}
+
+main section article {
+    margin: 15px 0; 
 }
 
 main section article img {
@@ -181,7 +183,7 @@ footer > p span {
     .navMobileOverlay {
         padding: 2vh 0; 
         width: 100%;
-        background: rgba(218, 141, 117, 0.5);
+        background: #848484;
     }
     
     .navMobileOverlay ul li {
@@ -231,8 +233,6 @@ footer > p span {
     footer section article p, ul li {
         display: inline-block;
     }
-
-    
 }
 
 

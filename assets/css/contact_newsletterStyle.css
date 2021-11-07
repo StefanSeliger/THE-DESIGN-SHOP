@@ -1,0 +1,100 @@
+/* ===== General Contact Styles ===== */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* Font Families & Colors
+font-family: 'Karla', sans-serif;
+Farbe: #323A45 / #848484 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    color: white; 
+    font-size: 1rem;
+}
+
+main {
+    background: url("https://images.unsplash.com/photo-1547623641-d2c56c03e2a7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") fixed no-repeat center/cover;
+    min-height: 50vh;
+    padding: 5vh 6vw; 
+}
+
+main h1 a {
+    text-decoration: none;
+    color: #323A45;
+    font-size: 1.5rem;
+}
+
+main h1 a:hover {
+    opacity: 0.5;
+}
+
+.fontSizeSmall {
+    font-size: 0.9rem; 
+}
+
+.fontStyleItalic {
+    font-style: italic;
+    color: #848484;
+}
+
+main section article {
+    margin: 5vh 6vw; 
+    padding: 10vh; 
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(218, 141, 117, 0.5); 
+}
+
+main section article h2 {
+    font-size: 2.5rem;
+}
+
+main section article p {
+    margin: 3vh 0;
+}
+
+main section article form input {
+    display: block; 
+    margin: 2vh auto; 
+    width: 85%; 
+    height: 30px; 
+    border-radius: 5px;
+    border: none; 
+    padding: 10px; 
+    color: #848484;
+}
+
+.inputMessageHeight {
+    height: 60px; 
+    resize: none; 
+    box-sizing: border-box; 
+}
+
+.submitButtonContact, .submitButtonNewsletter {
+    width: 40%;
+    background: rgba(255, 84, 71, 0.5); 
+    height: 50px; 
+    color: white; 
+}
+
+.submitButtonContact:hover, .submitButtonNewsletter:hover {
+    background: rgb(0, 104, 174); 
+}
+
+/* ===== Media Queries for 600px ===== */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 3vh 2vw;
+        text-align: center; 
+    }
+
+    main section article {
+        margin: 5vh 1vw; 
+        padding: 5vh 1vw; 
+    }
+}
+
